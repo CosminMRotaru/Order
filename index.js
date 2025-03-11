@@ -1,6 +1,6 @@
-import { menuArray } from "./data.js";
+import { menuArray } from "./data.js"
 
-const cart = [];
+const cart = []
 document.addEventListener('click', function(e){
   if(e.target.dataset.add){
     handleAddClick(e.target.dataset.add)}
@@ -20,6 +20,10 @@ document.getElementById('paymentForm').addEventListener('submit', function(e){
   showConfirmationMessage(name)
   clearCart()
 })
+function hidePaymentModal() {
+    document.getElementById('paymentModal').style.display = 'none'
+}
+document.getElementById('closeModalBtn').addEventListener('click', hidePaymentModal)
 
 function handleAddClick(itemId){
  const targetItem=menuArray.find(item => item.id == itemId)
@@ -33,7 +37,7 @@ function handleRemoveClick(itemId){
   const index = cart.findIndex(item => item.id == itemId)
   if(index > -1){
       cart.splice(index, 1)
-      renderCart();
+      renderCart()
   }
 }
 
