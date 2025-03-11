@@ -19,20 +19,13 @@ header {
     text-align: center;
     margin-bottom: 48px;
 }
-
-header h1 {
-    font-size: 32px;
-    color: #2C2C2C;
-    font-weight: 800;
-    margin-bottom: 12px;
-    letter-spacing: -1px;
+.header-image {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 12px; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08); 
 }
 
-header p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.4;
-}
 
 /* Menu Items */
 .feed {
