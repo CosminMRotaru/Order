@@ -14,20 +14,18 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styles */
 header {
     text-align: center;
     margin-bottom: 48px;
 }
+
 .header-image {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 12px; 
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08); 
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
 }
 
-
-/* Menu Items */
 .feed {
     display: flex;
     flex-direction: column;
@@ -36,7 +34,7 @@ header {
 
 .item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     background: white;
     border-radius: 12px;
     padding: 20px;
@@ -50,6 +48,7 @@ header {
     vertical-align: middle;
     line-height: 1;
     display: inline-block;
+    margin-top: -10px;
 }
 
 .item-details {
@@ -103,7 +102,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Cart Styles */
 .cart {
     background: white;
     padding: 24px;
@@ -133,6 +131,10 @@ header {
 .cart-emoji {
     font-size: 40px;
     min-width: 50px;
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block;
+    margin-top: -5px;
 }
 
 .cart-item-info {
@@ -203,7 +205,7 @@ header {
     padding: 24px 0;
     font-style: italic;
 }
-/* Payment Modal Styles */
+
 .payment-modal {
     display: none;
     position: fixed;
@@ -222,6 +224,7 @@ header {
     border-radius: 12px;
     width: 300px;
     text-align: center;
+    position: relative;
 }
 
 .modal-content h2 {
@@ -236,7 +239,7 @@ header {
     border-radius: 4px;
 }
 
-.modal-content button {
+.modal-content button[type="submit"] {
     background: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -246,9 +249,10 @@ header {
     margin-top: 10px;
 }
 
-.modal-content button:hover {
+.modal-content button[type="submit"]:hover {
     background: #45a049;
 }
+
 .close-modal-btn {
     position: absolute;
     top: 10px;
@@ -259,13 +263,13 @@ header {
     cursor: pointer;
     color: #888;
     padding: 5px;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .close-modal-btn:hover {
-    color: #333; 
+    color: #333;
 }
-/* Confirmation Message Styles */
+
 .confirmation-message {
     display: none;
     text-align: center;
